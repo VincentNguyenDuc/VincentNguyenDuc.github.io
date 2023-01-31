@@ -7,6 +7,6 @@ Personal Projects
 - [Quote Generator API](https://vincentnguyenduc.github.io/QuoteAPI/)
 
 ## Bots Development
-- [Personal Discord Bot](https://vincentnguyenduc.github.io/PersonalDiscordBot/)
+- [Discord Bot](https://vincentnguyenduc.github.io/DiscordBot/)
 
 
