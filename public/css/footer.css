@@ -31,7 +31,6 @@ footer {
 }
 
 
-
 /* Contact information */
 
 footer h1 {
@@ -78,6 +77,6 @@ footer .contact {
     background: #171515;
 }
 
-.fa-envelope:hover {
+.fa-google:hover {
     background: #dd4b39;
 }
