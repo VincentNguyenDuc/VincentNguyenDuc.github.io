@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Navigate bar */
+/*------------------------------------------ Navigate bar ------------------------------------------ */
 nav {
     position: fixed;
     top: 0;
@@ -21,12 +21,12 @@ nav {
     z-index: 100;
 }
 
-/* header */
+/*----------------------------------------- HEADER -------------------------------------- */
 
 .header {
-    height: 95vh;
+    height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: #101010;
     background-size: cover;
     background-position: center;
 }
@@ -85,7 +85,7 @@ h4 {
     font-size: 30px;
 }
 
-/* about */
+/*----------------------------------------- ABOUT------------------------------------------- */
 .about {
     width: 100%;
     padding: 100px 0px;
@@ -153,13 +153,86 @@ button:hover {
     cursor: pointer;
 }
 
+/* --------------------------------------- Skills ------------------------------------------- */
 
-/* Contact */
+.skills {
+    background: #101010;
+    width: 100%;
+    padding: 70px 0px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background-color: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+}
+
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.paragraph p {
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button {
+    background-color: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 9px 22px;
+        border-radius: 30px;
+        transition: 0.4s;
+    }
+    
+.card .button:hover {
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+    }
+
+
+/*---------------------------------------- Contact ------------------------------------------ */
 .contacts {
     position: relative;
     width: 100%;
-    height: 400px;
-    background: black;
+    height: 250px;
+    background: #191919;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,9 +240,9 @@ button:hover {
 }
 
 .contacts p {
-    font-size: 75px;
+    font-size: 50px;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
@@ -178,32 +251,36 @@ button:hover {
 }
 
 .social a {
-    font-size: 30px;
-    width: 60px;
-    height: 60px;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: white;
     border-radius: 50%;
-    margin: 22px 15px; 
+    margin: 22px 15px;
     background-color: #f9004d;
 }
 
 /* Add color for each icon when hover */
-.fa-facebook:hover {
+.fa-facebook-f:hover {
     background: #3B5998;
 }
 
-.fa-linkedin:hover {
+.fa-linkedin-in:hover {
     background: #0072b1;
 }
 
-.fa-github:hover {
+.fa-github-alt:hover {
     background: #171515;
 }
 
 .fa-envelope:hover {
     background: #dd4b39;
+}
+
+.fa-discord:hover {
+    background: #36393e;
 }
