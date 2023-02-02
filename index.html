@@ -23,41 +23,42 @@
 </head>
 
 <body>
-    <!-- Header Section -->
-    <div class="header">
-        <nav>
-            <h2 class="logo">Portfo<span>lio</span></h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">My Projects</a></li>
-                <li><a href="#">My Skills</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
+    <!-- Nav bar -->
+    <nav>
+        <h2 class="logo">Portfo<span>lio</span></h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-skills">My Skills</a></li>
+            <li><a href="#my-projects">My Projects</a></li>
+            <li><a href="#contact-me">Contacts</a></li>
+        </ul>
+    </nav>
 
+    <!-- Header Section -->
+    <section class="header" id="home">
         <div class="content">
             <h4>Hello! My name is</h4>
             <h1>Vincent <span>Nguyen</span></h1>
             <h3>A Tech Enthusiast</h3>
         </div>
-    </div>
+    </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about-me">
         <div class="main">
-            <img src="/public/images/main.jpg">
+            <img src="/public/images/sticker.jpg">
             <div class="about-text">
                 <h2>About Me</h2>
                 <h5>Developer <span>& Analyst</span></h5>
                 <p>
-                    I am a proactive and open-minded Monash University freshman living in Melbourne, Australia. 
-                    I am pursuing a degree in Computer Science with a specialization in Data Science. 
-                    Excelling in the field of computers and technologies has been one of the biggest targets I longed for, 
+                    I am a proactive and open-minded Monash University freshman living in Melbourne, Australia.
+                    I am pursuing a degree in Computer Science with a specialization in Data Science.
+                    Excelling in the field of computers and technologies has been one of the biggest targets I longed
+                    for,
                     and I am looking forward to playing a role in our Tech industry.
                 </p>
-                <button type="button">Let's Talk</button>
-
+                <a href="#contact-me"><button type="button">Let's Talk</button></a>
             </div>
         </div>
     </section>
