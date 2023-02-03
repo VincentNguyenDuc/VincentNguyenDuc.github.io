@@ -3,7 +3,10 @@
 <html lang="en">
 
 <head>
+    <!-- Version 2.0 -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Vincent Nguyen Portfolio</title>
 
     <!-- CSS -->
@@ -17,113 +20,169 @@
         rel="stylesheet">
 
     <!-- Icons -->
+    <!-- box icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <!-------------------------------------------- Nav bar ----------------------------------------->
-    <nav>
-        <h2 class="logo">Portfo<span>lio</span></h2>
-        <ul>
-            <li><a href="#home"><span>Home</span></a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#my-skills">My Skills</a></li>
-            <li><a href="#my-projects">Portfolio</a></li>
-            <li><a href="#contact-me">Contacts</a></li>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">Portfo<span>lio</span></a>
+
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
-    </nav>
 
-    <!----------------------------------------- Header ---------------------------------------->
-    <section class="header" id="home">
-        <div class="content">
-            <h4>Hello! My name is</h4>
-            <h1>Vincent <span>Nguyen</span></h1>
-            <h3><span>Tech</span> Enthusiast & <span>Fullstack</span> Wannabe</h3>
-            <a class="find-out" href="#about-me">Find Out More</a>
+        <div class="bx bx-menu" id="menu-icon">
+
         </div>
-    </section>
+    </header>
 
-    <!----------------------------------------- About Me --------------------------------------->
-    <section class="about" id="about-me">
-        <div class="main">
-            <img src="/public/images/main.jpg">
-            <div class="about-text">
-                <h2>Who am <span>I?</span></h2>
-                <h5>A Developer & An Analyst</h5>
-                <p>
-                    I'm a proactive and open-minded CS student at Monash University in Australia.
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <div class="slide">
+                <span class="one">Hello!</span>
+                <span class="two">I'm</span>
+            </div>
 
-                    Excelling in the field of computers and technologies has been one of the biggest targets I longed
-                    for, and I look forward to playing a role in our Tech industry.
+            <h1>Vincent <span>Nguyen</span></h1>
 
-                    Working with the mindset of “Think it. Do it. Improve it”, I always force myself to take everything into immediate
-                    action and be committed to the idea of striving for success and breaking free. 
-                </p>
-                <a href="#contact-me"><button type="button">Say Hello!</button></a>
+            <h3><span>Full-stack</span> Wannabe.</h3>
+
+            <div class="button">
+                <a href="#contact" class="btn">Say Hi!</a>
+                <a href="#portfolio" class="btn2">
+                    <span class="icon"><i class="bx bx-play"></i></span>
+                    <span class="text">Check Out My Work!</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!---------------------------------------- My Skills --------------------------------------------->
-    <section class="skills" id="my-skills">
+    <!-- About -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./public/images/main.jpg">
+        </div>
+
+        <div class="about-text">
+            <h2>Who am <span>I?</span></h2>
+            <h4>A Developer & An Analyst</h4>
+            <p>
+                I'm a proactive and open-minded CS student at Monash University in Australia.
+
+                Excelling in the field of computers and technologies has been one of the biggest targets I longed
+                for, and I look forward to playing a role in our Tech industry.
+
+                Working with the mindset of “Think it. Do it. Improve it”, I always force myself to take everything
+                into
+                immediate
+                action and be committed to the idea of striving for success and breaking free.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+
+    <section class="skills" id="skills">
 
         <div class="title">
+            <p>What I am Expert In</p>
             <h2><span>My</span> Skills</h2>
         </div>
 
-        <div class="box">
+        <div class="skills-content">
 
-            <div class="card">
-                <i class="fa-solid fa-code"></i>
+            <div class="box">
+                <i class='bx bx-code-alt'></i>
                 <h5>Web Development</h5>
                 <div class="paragraph">
                     <p>
-                        HTML, CSS, JavaScript, ReactJs, Boostrap, DOM Manipulation
+                        I can design web
                     </p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#my-projects">Read More</a>
-                    </p>
+                    <a class="read" href="#my-projects">Read More</a>
+
                 </div>
             </div>
 
-            <div class="card">
-                <i class="fa-solid fa-database"></i>
+            <div class="box">
+                <i class='bx bxs-data'></i>
                 <h5>Data Analyst</h5>
                 <div class="paragraph">
                     <p>
-                        Python, R, SQL, Jupyter Notebook, UNIX, Pandas, Scikit-learn, NumPy
+                        I can analyze data
                     </p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#my-projects">Read More</a>
-                    </p>
+                    <a class="read" href="#my-projects">Read More</a>
                 </div>
             </div>
 
-            <div class="card">
-                <i class="fa-solid fa-server"></i>
+            <div class="box">
+                <i class='bx bxs-server'></i>
                 <h5>Back-end Engineer</h5>
                 <div class="paragraph">
                     <p>
-                        Node.js, Express.js, PostgreSQL, Heroku, RESTful API, Mocha
+                        I can create API
                     </p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#my-projects">Read More</a>
-                    </p>
+                    <a class="read" href="#my-projects">Read More</a>
                 </div>
 
             </div>
         </div>
-
-
-
     </section>
 
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="title">
+            <p>What I am Doing</p>
+            <h2><span>Latest</span> Projects</h2>
+        </div>
 
-    <!-------------------------------------- Contact me ---------------------------------------------->
-    <section class="contacts" id="contact-me">
-        <p>Contact <span>Me</span></p>
+        <div class="portfolio-content">
+
+            <div class="row">
+                <img src="/public/images/envelope.jpg">
+                <div class="layer">
+                    <h5>Budget Envelope API</h5>
+                    <a href="https://vincentnguyenduc.github.io/PersonalBudget/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="/public/images/quotes.jpg">
+                <div class="layer">
+                    <h5>Quotes JSON Generator</h5>
+                    <a href="https://vincentnguyenduc.github.io/QuoteAPI/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="/public/images/bots.jpg">
+                <div class="layer">
+                    <h5>Discord Bot</h5>
+                    <a href="https://vincentnguyenduc.github.io/DiscordBot/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <!-- Add more div to add more projects -->
+        </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+        <h2>Contact <span>Me</span></h2>
+        <h4>If you want <span>:)</span></h4>
         <div class="social">
             <a href="https://www.facebook.com/profile.php?id=100025437465300" target="_blank"
                 class="fa-brands fa-facebook-f"></a>
@@ -132,11 +191,11 @@
             <a href="https://github.com/VincentNguyenDuc" target="_blank" class="fa-brands fa-github-alt"></a>
             <a href="mailto:thanhvinhnguyenduc@gmail.com" class="fa fa-envelope"></a>
         </div>
-    </section> 
-
-    <!-- VERSION 1.0.0 -->
+    </section>
 
 
+    <!-- Script -->
+    <script type="text/javascript" src="./public/js/script.js"></script>
 
 </body>
 
