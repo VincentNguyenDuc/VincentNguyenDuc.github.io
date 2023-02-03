@@ -9,12 +9,246 @@
 }
 
 :root {
-    --bg--color: #2a2a2a;
-    --second-bg-color: #202020;
+    --bg--color: #101010;
+    --second-bg-color: #191919;
     --text-color: #fff;
-    --second-color: #ccc;
-    --main-color: #ff4d05;
+    --second-color: white;
+    --main-color: #f9004d;
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
 }
+
+body {
+    background: var(--bg--color);
+    color: var(--text-color);
+}
+
+
+
+
+/* ---------------------------------HEADER ----------------------------------------*/
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all 0.45s ease;
+    background-color: var(--second-bg-color);
+}
+
+.logo {
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.navlist {
+    display: flex;
+}
+
+
+.navlist a {
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all 0.45 ease;
+}
+
+.navlist a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+/* ----------------------------------- HOME -------------------------------------- */
+
+section {
+    padding: 160px 15% 120px;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg--color);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.slide {
+    margin-bottom: 20px;
+}
+
+.one {
+    color: var(--text-color);
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: var(--main-color);
+    font-weight: 600;
+}
+
+.two {
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    list-style: 1.1;
+    margin: 0 0 8px;
+}
+
+.home-text h3 {
+    color: var(--text-color);
+    margin: 0 0 35px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+    transition-duration: 1s;
+}
+
+.btn2 {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border-radius: 60px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    width: auto;
+    max-width: 45px;
+    /** I'm animating max-width because width needs to be auto, and auto can't be animated **/
+    -webkit-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+    margin-left: 35px;
+}
+
+.btn2:hover {
+    max-width: 300px;
+}
+
+.icon {
+    color: var(--text-color);
+    font-size: 35px;
+    padding: 0px 6px;
+    display: flex;
+    align-items: center;
+}
+
+
+.text {
+    color: var(--text-color);
+    white-space: nowrap;
+    padding-right: 15px;
+    font-weight: 600;
+}
+
+/*----------------------------------------- ABOUT------------------------------------------- */
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: var(--second-bg-color);
+}
+
+.about img {
+    height: auto;
+    width: 500px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 550px;
+    padding-left: 60px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+
+
