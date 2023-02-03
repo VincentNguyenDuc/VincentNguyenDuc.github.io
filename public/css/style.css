@@ -222,7 +222,8 @@ section {
     max-width: 700px;
     height: auto;
     width: 100%;
-    border-radius: 8px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
 }
 
 
@@ -264,7 +265,7 @@ section {
 }
 
 .title h2 {
-    color: var(--text-color);   
+    color: var(--text-color);
     font-size: 75px;
     line-height: 1;
 }
@@ -481,10 +482,12 @@ section {
         padding: 12px 2.5%;
         transition: .1s;
     }
+
     header.sticky {
         padding: 10px 2.5%;
         transition: .1s;
     }
+
     section {
         padding: 110px 3% 60px;
     }
@@ -511,14 +514,17 @@ section {
     .about {
         grid-template-columns: 1fr;
     }
+
     .about-img {
         text-align: center;
     }
+
     .about-img img {
         width: 100%;
         height: auto;
         max-width: 100%;
     }
+
     .contact {
         grid-template-columns: 1fr;
     }
@@ -528,6 +534,7 @@ section {
     #menu-icon {
         display: block;
     }
+
     .navlist {
         position: absolute;
         top: -1000px;
@@ -539,6 +546,7 @@ section {
         text-align: left;
         transition: all .45s ease;
     }
+
     .navlist a {
         display: block;
         margin: 17px;
