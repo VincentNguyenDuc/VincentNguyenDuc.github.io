@@ -537,10 +537,10 @@ section {
     .navlist {
         position: absolute;
         top: -1000px;
-        right: 10px;
+        right: 0px;
         display: grid;
         flex-direction: column;
-        background: linear-gradient(rgba(255, 255, 255, 0.5), #ff004f);
+        background: linear-gradient(rgb(0, 0, 0), #ff004f);
         text-align: center;
         transition: all .45s ease;
         border-radius: 15px;
