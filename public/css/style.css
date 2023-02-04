@@ -538,13 +538,13 @@ section {
     .navlist {
         position: absolute;
         top: -1000px;
-        right: 0;
-        left: 0;
-        display: flex;
+        right: 10px;
+        display: grid;
         flex-direction: column;
-        background: var(--bg-color);
-        text-align: left;
+        background: linear-gradient(rgba(255, 255, 255, 0.5), #ff004f);
+        text-align: center;
         transition: all .45s ease;
+        border-radius: 15px;
     }
 
     .navlist a {
@@ -552,15 +552,25 @@ section {
         margin: 17px;
         font-size: 20px;
         transition: all .45s ease;
-        color: var(--text-color);
+        color: var(--main-color);
     }
 
-    .navlist a:hover {
+
+    .navlist li a {
         color: var(--text-color);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
     }
+
+    .navlist li a:hover {
+        color: var(--text-color);
+        scale: 1.1;
+    }
+
 
     .navlist .active {
-        color: var(--second-color);
+        color: var(--text-color);
     }
 
     .navlist.open {
