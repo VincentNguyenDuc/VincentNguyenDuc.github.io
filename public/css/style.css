@@ -11,18 +11,20 @@
 
 
 :root {
-    --bg--color: #101010;
-    --second-bg-color: #191919;
+    --dark-bg--color: #101010;
+    --second-dark-bg-color: #191919;
     --text-color: #fff;
     --second-color: #ccc;
     --main-color: #f9004d;
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
+    --linear-color: linear-gradient(rgba(0, 0, 0), var(--main-color));
+    --linear-opacity-color: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
 }
 
 body {
-    background: var(--bg--color);
+    background: var(--dark-bg--color);
     color: var(--text-color);
 }
 
@@ -47,7 +49,7 @@ header {
 }
 
 header.sticky {
-    background: var(--second-bg-color);
+    background: var(--second-dark-bg-color);
     border-bottom: 1px solid #ffffff1a;
     padding: 12px 15%;
 }
@@ -101,7 +103,7 @@ section {
     height: 100vh;
     width: 100%;
     background-image: url(/public/images/background.jpg);
-    background-color: var(--bg--color);
+    background-color: var(--dark-bg--color);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -213,7 +215,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center;
     gap: 6.5rem;
-    background-color: var(--second-bg-color);
+    background-color: var(--second-dark-bg-color);
     text-align: justify;
 }
 
@@ -250,7 +252,7 @@ section {
 /* --------------------------------------- Skills ------------------------------------------- */
 
 .skills {
-    background: var(--bg--color);
+    background: var(--dark-bg--color);
 }
 
 .title {
@@ -278,7 +280,7 @@ section {
 }
 
 .box {
-    background-color: var(--second-bg-color);
+    background-color: var(--second-dark-bg-color);
     padding: 35px 45px;
     border-radius: 8px;
     transition: all .45 ease;
@@ -330,7 +332,7 @@ section {
 
 /* ---------------------------------Portfolio-------------------------------- */
 .portfolio {
-    background-color: var(--second-bg-color);
+    background-color: var(--second-dark-bg-color);
 }
 
 .portfolio-content {
@@ -350,7 +352,7 @@ section {
 
 .row img {
     width: 100%;
-    height: 250px;
+    height: 270px;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
@@ -359,7 +361,7 @@ section {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), #ff004f);
+    background: var(--linear-opacity-color);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -446,7 +448,7 @@ section {
     color: white;
     border-radius: 50%;
     margin: 22px 15px;
-    background-color: #f9004d;
+    background-color: var(--main-color);
     transition: all .5s ease-in-out;
 }
 
@@ -541,7 +543,7 @@ section {
         right: 0px;
         display: grid;
         flex-direction: column;
-        background: linear-gradient(rgb(0, 0, 0), #ff004f);
+        background: var(--linear-color);
         text-align: center;
         transition: all .45s ease;
         border-radius: 15px;
