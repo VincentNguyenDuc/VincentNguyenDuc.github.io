@@ -11,11 +11,12 @@
 
 
 :root {
-    --dark-bg--color: #101010;
-    --second-dark-bg-color: #191919;
+    --bg-color: #101010;
+    --second-bg-color: #191919;
     --text-color: #fff;
     --second-color: #ccc;
     --main-color: #f9004d;
+    --button-background: #333333;
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
@@ -23,13 +24,24 @@
     --linear-opacity-color: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
 }
 
-body {
-    background: var(--dark-bg--color);
-    color: var(--text-color);
+.light_theme {
+    --bg-color: #fff;
+    --second-bg-color: #ccc;
+    --text-color: #101010;
+    --second-color: #191919;
+    --main-color: #f9004d;
+    --button-background: #bbbbbb;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+    --linear-color: linear-gradient(rgb(255, 255, 255), var(--main-color));
+    --linear-opacity-color: linear-gradient(rgba(255, 255, 255, 0.1), var(--main-color));
 }
 
-
-
+body {
+    background: var(--bg--color);
+    color: var(--text-color);
+}
 
 /* ---------------------------------HEADER ----------------------------------------*/
 
@@ -49,7 +61,7 @@ header {
 }
 
 header.sticky {
-    background: var(--second-dark-bg-color);
+    background: var(--second-bg-color);
     border-bottom: 1px solid #ffffff1a;
     padding: 12px 15%;
 }
@@ -83,6 +95,12 @@ span {
     color: var(--main-color);
 }
 
+.navlist #toggle_light_dark:hover {
+    transition: all .5s ease;
+    scale: 1.5;
+}
+
+
 #menu-icon {
     font-size: 35px;
     color: var(--text-color);
@@ -102,8 +120,8 @@ section {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url(/public/images/background.jpg);
-    background-color: var(--dark-bg--color);
+    /* background-image: url(/public/images/background.jpg); */
+    background-color: var(--bg-color);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -215,7 +233,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center;
     gap: 6.5rem;
-    background-color: var(--second-dark-bg-color);
+    background-color: var(--second-bg-color);
     text-align: justify;
 }
 
@@ -252,7 +270,7 @@ section {
 /* --------------------------------------- Skills ------------------------------------------- */
 
 .skills {
-    background: var(--dark-bg--color);
+    background: var(--bg-color);
 }
 
 .title {
@@ -280,7 +298,7 @@ section {
 }
 
 .box {
-    background-color: var(--second-dark-bg-color);
+    background-color: var(--second-bg-color);
     padding: 35px 45px;
     border-radius: 8px;
     transition: all .45 ease;
@@ -311,7 +329,7 @@ section {
     display: inline-block;
     padding: 8px 18px;
     color: var(--second-color);
-    background: #333333;
+    background: var(--button-background);
     font-size: 14px;
     font-weight: 500;
     border-radius: 8px;
@@ -332,7 +350,7 @@ section {
 
 /* ---------------------------------Portfolio-------------------------------- */
 .portfolio {
-    background-color: var(--second-dark-bg-color);
+    background-color: var(--second-bg-color);
 }
 
 .portfolio-content {
@@ -423,7 +441,7 @@ section {
 
 .contact h2 {
     font-size: 50px;
-    color: white;
+    color: var(--text-color);
     margin-bottom: 20px;
     font-weight: bold;
 }
