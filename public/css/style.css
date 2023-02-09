@@ -24,6 +24,7 @@
     --linear-color: linear-gradient(rgba(0, 0, 0), var(--main-color));
     --linear-opacity-color: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
     --read-hover: #ffffff99;
+    --nav-bg: transparent;
 }
 
 .light_theme {
@@ -39,6 +40,7 @@
     --linear-color: linear-gradient(rgba(0, 0, 0), var(--main-color));
     --linear-opacity-color: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
     --read-hover: #00000099;
+    --nav-bg: #101010
 }
 
 body {
@@ -57,7 +59,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background: var(--nav-bg);
     padding: 22px 15%;
     border-bottom: 1px solid transparent;
     transition: all .45s ease;
@@ -137,6 +139,7 @@ section {
     align-items: center;
     justify-content: flex-start;
 }
+
 
 
 .slide {
@@ -454,7 +457,7 @@ section {
 
 .contact h2 {
     font-size: 50px;
-    color: #fff;
+    color: var(--text-color);
     margin-bottom: 20px;
     font-weight: bold;
 }
