@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    transition: all .5s ease;
 }
 
 
@@ -22,6 +23,7 @@
     --p-font: 1.1rem;
     --linear-color: linear-gradient(rgba(0, 0, 0), var(--main-color));
     --linear-opacity-color: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+    --read-hover: #ffffff99;
 }
 
 .light_theme {
@@ -36,6 +38,7 @@
     --p-font: 1.1rem;
     --linear-color: linear-gradient(rgb(255, 255, 255), var(--main-color));
     --linear-opacity-color: linear-gradient(rgba(255, 255, 255, 0.1), var(--main-color));
+    --read-hover: #00000099;
 }
 
 body {
@@ -61,13 +64,13 @@ header {
 }
 
 header.sticky {
-    background: var(--second-bg-color);
+    background: #191919;
     border-bottom: 1px solid #ffffff1a;
     padding: 12px 15%;
 }
 
 .logo {
-    color: var(--text-color);
+    color: #fff;
     font-size: 35px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -83,7 +86,7 @@ span {
 
 
 .navlist li a {
-    color: var(--text-color);
+    color: #fff;
     font-size: 17px;
     font-weight: bold;
     margin: 0 25px;
@@ -135,12 +138,13 @@ section {
     justify-content: flex-start;
 }
 
+
 .slide {
     margin-bottom: 20px;
 }
 
 .one {
-    color: var(--text-color);
+    color: #fff;
     display: inline-block;
     margin-right: 15px;
     height: 32px;
@@ -154,7 +158,7 @@ section {
 
 .two {
     display: inline-block;
-    color: var(--second-color);
+    color: #ccc;
     font-size: 20px;
     font-weight: 500;
 }
@@ -162,13 +166,13 @@ section {
 .home-text h1 {
     font-size: var(--big-font);
     font-weight: 700;
-    color: var(--text-color);
+    color: #fff;
     list-style: 1.1;
     margin: 0 0 8px;
 }
 
 .home-text h3 {
-    color: var(--text-color);
+    color: #fff;
     margin: 0 0 35px;
     font-size: 2rem;
     font-weight: 700;
@@ -186,7 +190,7 @@ section {
     padding: 12px 28px;
     background-color: var(--main-color);
     border-radius: 5px;
-    color: var(--text-color);
+    color: #fff;
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 600;
@@ -194,12 +198,11 @@ section {
 
 .btn:hover {
     transform: scale(0.9);
-    transition-duration: 1s;
 }
 
 .btn2 {
     background-color: var(--main-color);
-    color: var(--text-color);
+    color: #fff;
     border-radius: 60px;
     height: 45px;
     display: inline-flex;
@@ -207,9 +210,8 @@ section {
     overflow: hidden;
     width: auto;
     max-width: 45px;
-    /** I'm animating max-width because width needs to be auto, and auto can't be animated **/
     -webkit-transition: max-width 0.5s;
-    transition: max-width 0.5s;
+    transition: max-width 0.5s ease;
     margin-left: 35px;
 }
 
@@ -218,7 +220,7 @@ section {
 }
 
 .icon {
-    color: var(--text-color);
+    color: #fff;
     font-size: 35px;
     padding: 0px 6px;
     display: flex;
@@ -227,7 +229,7 @@ section {
 
 
 .text {
-    color: var(--text-color);
+    color: #fff;
     white-space: nowrap;
     padding-right: 15px;
     font-weight: 600;
@@ -344,7 +346,7 @@ section {
 
 .read:hover {
     letter-spacing: 1px;
-    background: #ffffff99;
+    background: var(--read-hover);
     color: var(--text-color);
 }
 
