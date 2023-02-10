@@ -577,7 +577,7 @@ section {
         right: 0px;
         display: grid;
         flex-direction: column;
-        background: var(--linear-color);
+        background: #101010;
         text-align: center;
         transition: all .45s ease;
         border-radius: 15px;
@@ -591,22 +591,16 @@ section {
         color: var(--main-color);
     }
 
-
     .navlist li a {
-        color: var(--text-color);
+        color: #fff;
         margin-top: 10px;
         margin-bottom: 10px;
         font-weight: bold;
     }
 
     .navlist li a:hover {
-        color: var(--text-color);
+        color: var(--main-color);
         scale: 1.1;
-    }
-
-
-    .navlist .active {
-        color: var(--text-color);
     }
 
     .navlist.open {
