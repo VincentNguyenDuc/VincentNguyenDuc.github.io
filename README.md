@@ -1,3 +1,3 @@
 # Portfolio Website
 
-This is my portfolio website v2.0
+This is my portfolio website
