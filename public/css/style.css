@@ -305,7 +305,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     align-items: center;
     gap: 2.5rem;
-    margin-top: 2.5rem;
+    margin-top: 2.5rem; 
 }
 
 .box {
@@ -313,6 +313,7 @@ section {
     padding: 35px 45px;
     border-radius: 8px;
     transition: all .45 ease;
+    box-sizing: border-box;
 }
 
 
