@@ -19,12 +19,13 @@ window.onscroll = () => {
 }
 
 toggle.onclick = () => {
-    document.body.classList.toggle("light_theme")
+    document.body.classList.toggle("light_theme");
+    document.body.classList.toggle("dark_theme");
     if (document.body.classList.contains("light_theme")) {
         toggle.className = "fa-solid fa-sun";
         home.style.backgroundImage = "url(/public/images/light_bg.jpg)"
     } else {
-        toggle.classList = "fa-solid fa-moon";
+        toggle.className = "fa-solid fa-moon";
         home.style.backgroundImage = "url(/public/images/dark_bg.jpg)";
     }
 }

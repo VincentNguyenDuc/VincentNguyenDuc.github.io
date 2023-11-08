@@ -12,15 +12,18 @@
 
 
 :root {
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+.dark_theme {
     --bg-color: #101010;
     --second-bg-color: #191919;
     --text-color: #fff;
     --second-color: #ccc;
     --main-color: #f9004d;
     --button-background: #333333;
-    --big-font: 5rem;
-    --h2-font: 3rem;
-    --p-font: 1.1rem;
     --linear-color: linear-gradient(rgba(0, 0, 0), var(--main-color));
     --linear-opacity-color: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
     --read-hover: #ffffff99;
@@ -34,9 +37,6 @@
     --second-color: #191919;
     --main-color: #1799DD;
     --button-background: #bbbbbb;
-    --big-font: 5rem;
-    --h2-font: 3rem;
-    --p-font: 1.1rem;
     --linear-color: linear-gradient(rgba(0, 0, 0), var(--main-color));
     --linear-opacity-color: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
     --read-hover: #00000099;
