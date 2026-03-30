@@ -303,7 +303,7 @@ section {
 .skills-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    align-items: center;
+    align-items: stretch;
     gap: 2.5rem;
     margin-top: 2.5rem; 
 }
@@ -314,6 +314,9 @@ section {
     border-radius: 8px;
     transition: all .45 ease;
     box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 
